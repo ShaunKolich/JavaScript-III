@@ -23,6 +23,14 @@ let firstName = {
 
 // code example for Implicit Binding
 
+let greeting = {
+    name: 'Shaun',
+    greet: function () {
+        return `${this.name} says hello`;
+    }
+}
+
+console.log(greeting.greet());
 // Principle 3
 
 // code example for New Binding
@@ -30,3 +38,20 @@ let firstName = {
 // Principle 4
 
 // code example for Explicit Binding
+
+let Newname = {
+    name: 'Shaun',
+    greet() {
+        return `Hi my name is ${this.name}`;
+    },
+
+wife: {
+        name: 'Vero',
+        greet() {
+            return `Hi my name is ${this.name}`;
+        }
+    }
+}
+
+console.log(Newname.greet());
+console.log(Newname.wife.greet());
