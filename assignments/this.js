@@ -35,6 +35,13 @@ console.log(greeting.greet());
 
 // code example for New Binding
 
+function Age(name, age) {
+    this.name = name;
+    this.name = age;
+
+}
+let me = new Age('Shaun', 37);
+console.log(me);
 // Principle 4
 
 // code example for Explicit Binding
@@ -45,7 +52,7 @@ let Newname = {
         return `Hi my name is ${this.name}`;
     },
 
-wife: {
+    wife: {
         name: 'Vero',
         greet() {
             return `Hi my name is ${this.name}`;
